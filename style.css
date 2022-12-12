@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+        scroll-behavior: smooth;
+	}
+    h1,h2,h3{
+        margin: 0;
+        padding: 0;
+    }
+    :root{
+        --gren: #00FF22;
+        --white: #F8F7F3;
+    }
+    body{
+        background-color: #101d22;
+    }
+    section{
+        margin-top: 170px;
+    }
+
+
+
+    /*HEADER*/
+    header{
+        width: 100%;
+        height: 100vh;
+    }
+    .navegacion{
+        width: 100%;
+        height: 150px;
+    }
+
+    /*LOGO AND BUSQUEDA*/
+    .logo{
+        background-color: var(--white);
+        width: 100%;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+    }
+    .img{
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .img img{
+        width: 100%;
+    }
+
+    .busqueda{
+        width: 400px;
+        height: 110px;
+        left: 880px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+    }
+
+    .input{
+        width: 250px;
+        height: 45px;
+        border-radius: 20px;
+        border: 1px solid;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    input{
+        margin-right: 18px;
+        border: none;
+        height: 30px;
+        outline: none;
+        background-color: var(--white);
+        width: 180px;
+    }
+    .fa-magnifying-glass{
+        color: rgb(0, 0, 0);
+    }
+    .fa-magnifying-glass:hover{
+        color: var(--gren);
+        transition: .5s;
+    }
+
+
+    .login{
+        width: 100px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+    .login i{
+        color: black;
+        font-size: 23px;
+        padding: 8px;
+    }
+    .login i:hover{
+        color: var(--gren);
+        transition: .7s;
+    }
+
+
+    /*navegacion*/
+    .panel-navegacion{
+        width: 100%;
+        height: 40px;
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 150px;
+    }
+    .esconder{
+        display: none;
+    }
+    .panel-navegacion a{
+        text-decoration: none;
+        color:var(--white);
+    }
+    .panel-navegacion a:hover{
+        color: var(--gren);
+        transition: .9s;
+    }
+
+    .portada{
+        width: 100%;
+        height: 100vh;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(./IMAGENES/contenido/1.jpg);
+    }
+
+
+
+    /*PRODUCTOS-PERFUMES*/
+    #productos{
+        width: 100%;
+        height: 970vh;
+    }
+    .productos-catalogo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 160vh;
+    }
+    .title{
+        font-size: 35px;
+        padding: 25px;
+        color: var(--white);
+        text-align: center;
+    }
+    .box{
+        margin: auto;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 90%;
+    }
+    .cajas{
+        background-color: white;
+        width: 31%;
+        height: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 25px;
+    }
+    .cajas:hover{
+        box-shadow: 0 0 15px var(--white);
+        transition: .5s;
+    }
+    .img-producto{
+        width: 80%;
+        height: 75%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .perfumes .cajas:nth-child(1) .img-producto{
+        background-image: url(./IMAGENES/productos/perfumes/1.jpeg)
+    }
+    .perfumes .cajas:nth-child(2) .img-producto{
+        background-image: url(./IMAGENES/productos/perfumes/2.jpeg);
+    }
+    .perfumes .cajas:nth-child(3) .img-producto{
+        background-image: url(./IMAGENES/productos/perfumes/3.jpeg);
+    }
+    .perfumes .cajas:nth-child(4) .img-producto{
+        background-image: url(./IMAGENES/productos/perfumes/4.jpeg);
+    }
+    .perfumes .cajas:nth-child(5) .img-producto{
+        background-image: url(./IMAGENES/productos/perfumes/5.jpeg)
+    }
+    .perfumes .cajas:nth-child(6) .img-producto{
+        background-image: url(./IMAGENES/productos/perfumes/6.jpeg);
+    }
+
+
+    .maquillaje .cajas:nth-child(1) .img-producto{
+        background-image: url(./IMAGENES/productos/maquillaje/pb0074064_1_9trhoggjutebegio.jpg)
+    }
+    .maquillaje .cajas:nth-child(2) .img-producto{
+        background-image: url(./IMAGENES/productos/maquillaje/342912_1.webp)
+    }
+    .maquillaje .cajas:nth-child(3) .img-producto{
+        background-image: url(./IMAGENES/productos/maquillaje/81612798_1_4_v0hz4znw4bvb6w4d.jpg)
+    }
+    .maquillaje .cajas:nth-child(4) .img-producto{
+        background-image: url(./IMAGENES/productos/maquillaje/99350063649_1.jpg)
+    }
+    .maquillaje .cajas:nth-child(5) .img-producto{
+        background-image: url(./IMAGENES/productos/maquillaje/m6gw010000_1_1_mstplim0xst1nwgm.webp)
+    }
+    .maquillaje .cajas:nth-child(6) .img-producto{
+        background-image: url(./IMAGENES/productos/maquillaje/mt7e020000_1_3_fcxt7yitcd39icb1.jpg)
+    }
+
+
+
+    .desodorantes .cajas:nth-child(1) .img-producto{
+        background-image: url(./IMAGENES/productos/desodorantes/0099495_captain-desodorante-spray.jpeg)
+    }
+    .desodorantes .cajas:nth-child(2) .img-producto{
+        background-image: url(./IMAGENES/productos/desodorantes/0100078_angel-desodorante-spray.jpeg)
+    }
+    .desodorantes .cajas:nth-child(3) .img-producto{
+        background-image: url(./IMAGENES/productos/desodorantes/0115768_alaska-desodorante-body-spray.jpeg)
+    }
+    .desodorantes .cajas:nth-child(4) .img-producto{
+        background-image: url(./IMAGENES/productos/desodorantes/0148701_black-energy-desodorante.jpeg)
+    }
+    .desodorantes .cajas:nth-child(5) .img-producto{
+        background-image: url(./IMAGENES/productos/desodorantes/0155928_black-desodorante-body-spray.jpeg)
+    }
+    .desodorantes .cajas:nth-child(6) .img-producto{
+        background-image: url(./IMAGENES/productos/desodorantes/0160007_apollo-desodorante-body-spray.jpeg)
+    }
+
+
+    .higiene .cajas:nth-child(1) .img-producto{
+        background-image: url(./IMAGENES/productos/higiene/babe-intimate-hygiene-gel-250ml.webp)
+    }
+    .higiene .cajas:nth-child(2) .img-producto{
+        background-image: url(./IMAGENES/productos/higiene/dr-brown-s-baby-care-kit_1.webp)
+    }
+    .higiene .cajas:nth-child(3) .img-producto{
+        background-image: url(./IMAGENES/productos/higiene/suavinex-intimate-hygiene-gel-500ml.webp)
+    }
+    .higiene .cajas:nth-child(4) .img-producto{
+        background-image: url(./IMAGENES/productos/higiene/image-5293aea2b1484cbdb836d45e99e8291c.webp)
+    }
+    .higiene .cajas:nth-child(5) .img-producto{
+        background-image: url(./IMAGENES/productos/higiene/isdin-psoriatic-skin-psorisdin-hygiene-bath-gel-500ml_1_1.webp)
+    }
+    .higiene .cajas:nth-child(6) .img-producto{
+        background-image: url(./IMAGENES/productos/higiene/klorane.webp)
+    }
+
+
+    .accesorios .cajas:nth-child(1) .img-producto{
+        background-image: url(./IMAGENES/productos/accesorios/-te-traemos-la-nueva-coleccion-de-lentes-de-sol-lenor-elaborada-con-un-diseño-unico-y-especial-el-cual-te-permitira-enfocar-tu-imagen-de-una-manera-.jpg)
+    }
+    .accesorios .cajas:nth-child(2) .img-producto{
+        background-image: url(./IMAGENES/productos/accesorios/-te-traemos-la-nueva-coleccion-de-relojes-elaborados-con-un-diseño-unico-y-especial-el-cual-te-permitira-enfocar-tu-imagen-de-una-manera-mas-seria-y.webp)
+    }
+    .accesorios .cajas:nth-child(3) .img-producto{
+        background-image: url(./IMAGENES/productos/accesorios/1-6-830x966.jpg)
+    }
+    .accesorios .cajas:nth-child(4) .img-producto{
+        background-image: url(./IMAGENES/productos/accesorios/1991222.webp)
+    }
+    .accesorios .cajas:nth-child(5) .img-producto{
+        background-size: 300px;
+        background-image: url(./IMAGENES/productos/accesorios/billetera-slim-vertical-cuero-genuino-presentacion-cafe-bl040.jpg)
+    }
+    .accesorios .cajas:nth-child(6) .img-producto{
+        background-image: url(./IMAGENES/productos/accesorios/imageUrl_2.webp)
+    }
+
+
+    
+    .cremas .cajas:nth-child(1) .img-producto{
+        background-image: url(./IMAGENES/productos/cremas/image-2bd08934e38844d6b3fbc13d25eaa1e2.webp)
+    }
+    .cremas .cajas:nth-child(2) .img-producto{
+        background-image: url(./IMAGENES/productos/cremas/image-3c942b32b1404b2fb7fc0727a51425d2.webp)
+    }
+    .cremas .cajas:nth-child(3) .img-producto{
+        background-image: url(./IMAGENES/productos/cremas/image-48fff65d44d54be4af08250c9d2a0bfb.webp)
+    }
+    .cremas .cajas:nth-child(4) .img-producto{
+        background-image: url(./IMAGENES/productos/cremas/image-7719c9f0092f47069cb4d7289a7c3a15.webp)
+    }
+    .cremas .cajas:nth-child(5) .img-producto{
+        background-image: url(./IMAGENES/productos/cremas/image-e97e15dd74e14a77a08702e2329ab991.webp)
+    }
+    .cremas .cajas:nth-child(6) .img-producto{
+        background-image: url(./IMAGENES/productos/cremas/imageUrl_1.webp)
+    }
+    
+
+    .oferta{
+        width: 70px;
+        height: 35px;
+        right: 132px;
+        top: 30px;
+        color: var(--white);
+        background-color: var(--gren);
+        display: flex;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        /* border-radius: 15px; */
+        position:relative;
+    }
+    .img-nombre span{
+        font-size: 15px;
+        color:#999;
+        font-weight: lighter;
+        text-decoration: line-through;
+    }
+    .oferta h1{
+        font-size: 20px;
+        margin: auto;
+    }
+    .img-nombre{
+        width: 100%;
+        height: 25%;
+        text-align: center;
+    }
+    .img-nombre h1{
+        margin: 5px 0;
+        font-size: 22px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .img-nombre h2{
+        font-size: 18px;
+    }
+    .img-nombre button{
+        margin: 5px 0;
+        width: 300px;
+        font-size: 15px;
+        color: var(--white);
+        height: 35px;
+        border: none;
+        background-color: var(--gren);
+        border-radius: 15px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .img-nombre button:hover{
+        cursor: pointer;
+        color: var(--gren);
+        background-color: #101d22;
+    }
+
+
+    /*FOOTER*/
+
+    footer{
+        margin-top: 50px;
+        width: 100%;
+        height: 150px;
+        background-color: #101d22;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-nav{
+        border-top: 1px solid rgba(255, 255, 255, 0.253);
+        width: 90%;
+        height: 130px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .contacto{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100px;
+    }
+    .contacto h1{
+        font-size: 15px;
+        color: white;
+        font-weight: lighter;
+    }
+    .navega{
+        width: 500px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navega nav{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        margin-left: 18px;
+    }
+    .navega nav a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: white;
+        padding: 0 15px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .navega nav a:hover{
+        transition: .8s;
+        color: var(--gren);
+    }
+    .navega h1{
+        padding: 20px 0 0 30px;
+        font-size: 13px;
+        font-weight: normal;
+        color: rgb(111, 116, 122);
+    }
+    .redes{
+        width: 300px;
+        height: 100px;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+    }
+    .redes i{
+        color: var(--white);
+        font-size: 25px;
+        padding: 10px;
+    }
+    .redes i:hover{
+        color: var(--gren);
+        transition: .7s;
+    }
+
+
+
+
+    /*RESPONSIVE*/
+    @media screen and (max-width: 1100px){
+        .busqueda{
+            left: 63%;
+            width: 35%;
+        }
+        .input{
+            width: 60%;
+        }
+        input{
+            width: 70%;
+        }
+        .panel-navegacion a{
+            font-size: 80%;
+        }
+        .cajas{
+            height: 45%;
+        }
+        .oferta{
+            right: 37%;
+        }
+        .img-nombre h1{
+            font-size: 18px;
+        }
+        .img-nombre h2{
+            font-size: 14px;
+        }
+        .img-nombre button{
+            width: 95%;
+        }
+    }
+    @media screen and (max-width: 938px){
+        .panel-navegacion a{
+            font-size: 70%;
+        }
+        
+        .cajas{
+            height: 43%;
+        }
+        .oferta{
+            right: 34.8%;
+        }
+        .img-nombre h1{
+            font-size: 15px;
+        }
+        .img-nombre h2{
+            font-size: 12px;
+        }
+
+    }
+    @media screen and (max-width: 782px){
+        .panel-navegacion a{
+            font-size: 60%;
+        }
+    
+        .oferta{
+            right: 32%;
+        }
+        .img-nombre h1{
+            font-size: 12px;
+        }
+        .img-nombre h2{
+            font-size: 11px;
+        }
+
+    }
+    @media screen and (max-width: 625px){
+        .input{
+            display: none;
+        }
+        .panel-navegacion a{
+            font-size: 50%;
+        }
+        
+        .cajas{
+            height: 45%;
+        }
+        .oferta{
+            right: 27.5%;
+        }
+        .img-nombre h1{
+            font-size: 11px;
+        }
+        .img-nombre h2{
+            font-size: 10px;
+        }
+
+    }
+    @media screen and (max-width: 573px){
+        .login{
+            display: none;
+        }
+        .esconder-responsive{
+            display: none;
+        }
+        .esconder{
+            display: flex;
+        }
+        #productos{
+            height: auto;
+        }
+        .productos-catalogo{
+            height: 300vh;
+        }
+        .cajas{
+            width: 45%;
+            height: 28%;
+        }
+        .box{
+            width: 90%;
+        }
+        .footer-nav{
+            flex-direction: column;
+        }
+        .navega{
+            text-align: center;
+            width: 90%;
+            padding: 0;
+            margin: 15px 0;
+        }
+        .navega nav a{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+        }
+        .navega h1{
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        .redes{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+    
+    @media screen and (max-width: 450px){
+        .panel-navegacion a{
+            padding: 15px;
+        }
+        .productos-catalogo{
+            height: 320vh;
+        }
+        .box{
+            margin: 0 auto;
+            justify-content: center;
+        }
+        .cajas{
+            width: 80%;
+            height: 380px;
+        }
+        footer{
+            height: 22vh;
+        }
+        .footer-nav{
+            height: 20vh;
+        }
+    }
+    @media screen and (max-width: 375px){
+        .panel-navegacion a{
+            padding: 15px;
+        }
+        .productos-catalogo{
+            height: 400vh;
+        }
+        .box{
+            margin: 0 auto;
+            justify-content: center;
+        }
+        .cajas{
+            width: 80%;
+            
+            height: 380px;
+        }
+        footer{
+            height: 30vh;
+        }
+        .footer-nav{
+            height: 29vh;
+        }
+        
+    }
+    @media screen and (max-width: 360px){
+        .productos-catalogo{
+            height: 370vh;
+        }
+    }
+    @media screen and (max-width: 280px){
+        .productos-catalogo{
+            height: 420vh;
+        }
+        .footer-nav{
+            width: 100%;
+        }
+        .navega{
+            width: 100%;
+        }
+
+    }
